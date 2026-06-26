@@ -17,3 +17,12 @@ fabric/chaincode/dist/
 
 # Note: fabric/bench/fabric_results.json IS committed -- it is the measured
 # Fabric latency (406 ms) that backs the paper, like prototype/results.json.
+
+# Kept on disk but excluded from the published repo: the research paper and the
+# internal/session docs. A top-level README.md documents the project instead.
+paper/
+/CLAUDE.md
+/PROJECT_HANDOFF.md
+/SESSION_NOTES.md
+prototype/README.md
+fabric/README.md
