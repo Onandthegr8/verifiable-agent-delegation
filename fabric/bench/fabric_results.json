@@ -1,0 +1,58 @@
+{
+  "measured_on": "2026-06-26T09:02:13.732Z",
+  "network": "hyperledger-fabric test-network",
+  "channel": "mychannel",
+  "chaincode": "agentdelegation",
+  "latency": {
+    "iterations": 500,
+    "mean_ms": 406.12904306400037,
+    "p50_ms": 398.987594,
+    "p95_ms": 509.311174,
+    "p99_ms": 533.811584
+  },
+  "sweep": [
+    {
+      "concurrency": 1,
+      "total_tx": 3,
+      "wall_s": 1.232652584,
+      "throughput_tx_s": 2.433775776679019
+    },
+    {
+      "concurrency": 5,
+      "total_tx": 15,
+      "wall_s": 1.207752491,
+      "throughput_tx_s": 12.419763247666943
+    },
+    {
+      "concurrency": 10,
+      "total_tx": 30,
+      "wall_s": 0.66369383,
+      "throughput_tx_s": 45.20156530609905
+    },
+    {
+      "concurrency": 25,
+      "total_tx": 75,
+      "wall_s": 1.698428365,
+      "throughput_tx_s": 44.15847117579198
+    },
+    {
+      "concurrency": 50,
+      "total_tx": 150,
+      "wall_s": 3.34261892,
+      "throughput_tx_s": 44.87499280953032
+    },
+    {
+      "concurrency": 75,
+      "total_tx": 225,
+      "wall_s": 5.857309303,
+      "throughput_tx_s": 38.41354252621752
+    },
+    {
+      "concurrency": 100,
+      "total_tx": 300,
+      "wall_s": 7.474714982,
+      "throughput_tx_s": 40.13530960343446
+    }
+  ],
+  "note": "End-to-end measured ledger latency/throughput. Use these to replace the modeled 400 ms figure in the paper (Table II, Section V)."
+}

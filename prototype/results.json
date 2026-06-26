@@ -1,0 +1,101 @@
+{
+  "env": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "cpu_name": "Intel(R) Core(TM) i3-7020U CPU @ 2.30GHz",
+    "processor": "Intel64 Family 6 Model 142 Stepping 9, GenuineIntel",
+    "machine": "AMD64",
+    "logical_cpus": 4,
+    "ram_gb": 11.9,
+    "python": "3.12.10",
+    "cryptography": "49.0.0"
+  },
+  "config": {
+    "enforcement_trials": 2000,
+    "overhead_trials": 5000,
+    "modeled_ledger_ms": 400.0
+  },
+  "enforcement": {
+    "B0": {
+      "S1_success_pct": 100.0,
+      "chain_reconstruction_pct": 0.0,
+      "S2_blocked_pct": 0.0,
+      "S3_blocked_pct": 0.0,
+      "S5_blocked_pct": 0.0,
+      "S4_blocked_pct": 0.0,
+      "S6_blocked_pct": 0.0
+    },
+    "B1": {
+      "S1_success_pct": 100.0,
+      "chain_reconstruction_pct": 0.0,
+      "S2_blocked_pct": 0.0,
+      "S3_blocked_pct": 0.0,
+      "S5_blocked_pct": 0.0,
+      "S4_blocked_pct": 0.0,
+      "S6_blocked_pct": 0.0
+    },
+    "B2": {
+      "S1_success_pct": 100.0,
+      "chain_reconstruction_pct": 100.0,
+      "S2_blocked_pct": 100.0,
+      "S3_blocked_pct": 100.0,
+      "S5_blocked_pct": 100.0,
+      "S4_blocked_pct": 100.0,
+      "S6_blocked_pct": 100.0
+    }
+  },
+  "overhead": {
+    "auth_mean_ms": {
+      "B0": 0.00023354870104230942,
+      "B1": 0.0003025742996833287,
+      "B2": 0.23783879697264637
+    },
+    "auth_p95_ms": {
+      "B0": 0.000800006091594696,
+      "B1": 0.000600004568696022,
+      "B2": 0.40879996959120035
+    },
+    "identity_verify_ms": 0.2095954460091889,
+    "nonce_check_ms": 0.0003226356800587382,
+    "revocation_latency_ms": 0.2140780460141832,
+    "throughput_tx_s": {
+      "B0": 4281762.20007681,
+      "B1": 3304973.3604162354,
+      "B2": 4204.528498834482
+    },
+    "mean_decision_latency_ms": {
+      "B0": 0.00023354870104230942,
+      "B1": 400.00030257429967,
+      "B2": 400.23783879697265
+    },
+    "chain_depth_sweep": {
+      "depths": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "mean_ms": [
+        0.20714395002578384,
+        0.20809445995255374,
+        0.2148119049757952,
+        0.22077425000024958,
+        0.23051212000718807,
+        0.23608582999149802
+      ],
+      "marginal_us_per_credential": 3.378053521378631,
+      "intercept_ms": 0.20211714263172187
+    }
+  },
+  "reject_path_coverage": {
+    "IdentityFailed_badsig": true,
+    "IdentityFailed_unknownDID": true,
+    "ReplayedNonce": true,
+    "BrokenChain": true,
+    "InvalidCredential_revoked": true,
+    "InvalidCredential_expired": true,
+    "OutOfScope": true,
+    "Approve": true
+  }
+}

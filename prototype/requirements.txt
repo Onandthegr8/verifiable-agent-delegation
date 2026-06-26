@@ -1,0 +1,4 @@
+# Python dependencies for the authorization-layer reference implementation.
+# Tested with Python 3.12.10 on Windows 10.
+cryptography>=46.0      # Ed25519 identities and signatures (tested: 49.0.0)
+matplotlib>=3.8         # results_fig.png generation (tested: 3.11.0)

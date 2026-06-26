@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+fabric/chaincode/dist/
+
+# LaTeX build artifacts (paper is compiled on Overleaf)
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.pdf
+
+# Note: fabric/bench/fabric_results.json IS committed -- it is the measured
+# Fabric latency (406 ms) that backs the paper, like prototype/results.json.

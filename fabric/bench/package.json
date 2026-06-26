@@ -1,0 +1,16 @@
+{
+  "name": "agent-delegation-bench",
+  "version": "1.0.0",
+  "description": "End-to-end Fabric latency/throughput benchmark for the agent-delegation chaincode",
+  "main": "bench.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "bench": "node bench.js"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.0",
+    "@hyperledger/fabric-gateway": "^1.5.0"
+  }
+}
