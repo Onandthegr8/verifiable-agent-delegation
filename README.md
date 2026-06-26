@@ -40,7 +40,7 @@ This runs 2,000 enforcement trials per scenario and 5,000 overhead trials, write
 
 ### Output
 
-![Prototype output](assets/output_screen.png)
+![Prototype output](output_screen.png)
 
 Three configurations are compared — **B0** (no checks), **B1** (allow-list, i.e. prior work), **B2** (this framework) — over six scenarios: S1 legitimate, S2 spoof, S3 out-of-scope, S4 revoked, S5 expired, S6 replay.
 
